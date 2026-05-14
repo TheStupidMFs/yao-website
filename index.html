@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>$YAO | Bitch Please</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
   <div class="noise"></div>
-  <div class="scanlines"></div>
-  <div class="cursor-glow"></div>
 
   <div class="popup" id="popup">
     <button id="closePopup">x</button>
-    <h3>⚠️ WARNING</h3>
+    <h3>RAGE ALERT</h3>
     <p>You have entered Bitch Please mode.</p>
   </div>
 
-  <header class="hero">
+  <header class="hero" id="home">
+
     <nav class="navbar">
-      <img src="assets/yaologo.jpg" class="nav-logo" alt="$YAO logo">
+      <img src="yaologo.jpg" class="nav-logo" alt="$YAO logo">
 
       <div class="nav-links">
         <a href="#lore">Lore</a>
@@ -31,78 +33,94 @@
     </nav>
 
     <div class="marquee">
-      <span>Bitch Please • Rage Comics Are Back • $YAO • Vintage Internet Energy • Bitch Please • Rage Comics Are Back • $YAO •</span>
+      <span>Bitch Please • Rage Comics Are Back • Vintage Internet Energy • $YAO • Bitch Please • Rage Comics Are Back • Vintage Internet Energy • $YAO •</span>
     </div>
 
     <section class="hero-content">
-      <img src="assets/yaologo.jpg" class="hero-logo" alt="$YAO logo">
+      <img src="yaologo.jpg" class="hero-logo" alt="$YAO logo">
 
-      <h1 class="glitch" data-text="BITCH PLEASE">BITCH PLEASE</h1>
+      <div class="speech-bubble">
+        <p>The internet got too polished...</p>
+        <strong>So we brought ugly back.</strong>
+      </div>
+
+      <h1>BITCH PLEASE</h1>
 
       <p class="hero-copy">
-        $YAO is the return of ugly, loud, sarcastic, vintage internet meme culture.
-        Rage comics are back. The timeline is cooked.
+        $YAO is vintage rage comic energy for the trenches. Loud, ugly, sarcastic,
+        unbothered, and way too stupid to ignore.
       </p>
 
       <div class="hero-buttons">
-        <a href="https://dexscreener.com/solana/2yzhy5unhvhtxqsddwadc1ozytb17bwv75n1lmif55tb" target="_blank" class="btn primary">Buy $YAO</a>
-        <button class="btn secondary" id="rageButton">Generate Rage</button>
+        <a 
+          href="https://dexscreener.com/solana/2yzhy5unhvhtxqsddwadc1ozytb17bwv75n1lmif55tb" 
+          target="_blank" 
+          class="btn yellow">
+          Buy / Chart
+        </a>
+
+        <button class="btn white" id="rageButton">
+          Generate Rage
+        </button>
       </div>
 
       <div class="rage-box" id="rageBox">
         Click the button. Let the meme speak.
       </div>
     </section>
+
   </header>
 
   <section class="banner-section">
-    <img src="assets/yaobanner.png" class="banner-img" alt="$YAO banner">
+    <img src="yaobanner.png" class="banner-img" alt="$YAO banner">
   </section>
 
   <section class="section" id="lore">
     <h2>The Lore</h2>
 
-    <p>
-      Before everything was polished, sponsored, and fake deep, the internet was stupid in the best way.
-      Rage faces, cursed edits, terrible fonts, bad grammar, and reactions that somehow explained life better than words.
-    </p>
+    <div class="comic-panel">
+      <p>
+        Before memes became brand-safe content calendars, the internet was pure chaos.
+        Rage faces. Bad edits. Giant reaction text. Zero polish. Maximum feeling.
+      </p>
 
-    <p>
-      $YAO brings that era back with one message:
-    </p>
+      <p>
+        $YAO brings that forgotten energy back with one sacred message:
+      </p>
 
-    <h3 class="big-quote">Bitch Please.</h3>
+      <h3>Bitch Please.</h3>
+    </div>
   </section>
 
-  <section class="section dark" id="memes">
+  <section class="section gray" id="memes">
     <h2>Meme Weapons</h2>
 
     <div class="meme-gallery">
       <div class="meme-card">
-        <img src="assets/yaomeme1.jpg" alt="$YAO meme 1">
-        <p>Exhibit A: certified vintage disrespect.</p>
+        <img src="yaomeme1.jpg" alt="$YAO meme 1">
+        <p>Certified vintage disrespect.</p>
       </div>
 
       <div class="meme-card">
-        <img src="assets/yaomeme2.jpg" alt="$YAO meme 2">
-        <p>Exhibit B: the timeline never stood a chance.</p>
+        <img src="yaomeme2.jpg" alt="$YAO meme 2">
+        <p>The timeline never stood a chance.</p>
       </div>
     </div>
 
     <div class="card-grid">
-      <div class="card shake">
+      <div class="card">
         <h3>Rage Comics</h3>
-        <p>The original ugly meme format returns.</p>
+        <p>The original ugly meme format.</p>
       </div>
 
-      <div class="card shake">
+      <div class="card">
         <h3>GIF Attacks</h3>
         <p>Reaction memes built for every timeline.</p>
       </div>
 
-      <div class="card shake">
-        <h3>Bitch Please Energy</h3>
-        <p>Sarcastic. Unbothered. Vintage.</p>
+      <div class="card">
+        <h3>2009 Energy</h3>
+        <p>Old internet chaos, rebuilt for Solana.</p>
       </div>
     </div>
   </section>
@@ -110,22 +128,28 @@
   <section class="section buy-section" id="buy">
     <h2>Buy $YAO</h2>
 
-    <p>
-      Copy the contract, check the chart, join the chaos.
-    </p>
+    <div class="comic-panel">
+      <p>
+        Copy the contract, check the chart, then decide if you are spiritually prepared.
+      </p>
 
-    <div class="buy-box">
       <code id="contract">VnqKnEybGaw6G5ZAdjvPDri5RzDLPXznqxBunG13GJE</code>
 
       <div class="hero-buttons">
-        <button class="btn primary" id="copyContract">Copy Contract</button>
+        <button class="btn yellow" id="copyContract">Copy Contract</button>
 
-        <a href="https://dexscreener.com/solana/2yzhy5unhvhtxqsddwadc1ozytb17bwv75n1lmif55tb" target="_blank" class="btn secondary">
-          View Chart
+        <a 
+          href="https://dexscreener.com/solana/2yzhy5unhvhtxqsddwadc1ozytb17bwv75n1lmif55tb" 
+          target="_blank" 
+          class="btn white">
+          Dexscreener
         </a>
 
-        <a href="https://t.me/yaoming_cto" target="_blank" class="btn secondary">
-          Join Telegram
+        <a 
+          href="https://t.me/yaoming_cto" 
+          target="_blank" 
+          class="btn white">
+          Telegram
         </a>
       </div>
 
@@ -133,7 +157,7 @@
     </div>
   </section>
 
-  <section class="section dark" id="community">
+  <section class="section gray" id="community">
     <h2>Join The Chaos</h2>
 
     <p>
