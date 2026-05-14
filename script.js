@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
     "Welcome to the YAO trenches.",
     "The internet peaked with this face.",
     "Community takeover activated.",
-    "Old internet. New chain. Same face."
+    "Old internet. New chain. Same face.",
+    "The meme escaped containment.",
+    "You are now spiritually online.",
+    "Certified Bitch Please behavior."
   ];
 
   function spawnFloatingText(text){
@@ -115,6 +118,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+
+  setInterval(() => {
+    if(Math.random() > 0.94){
+      document.body.style.filter = "contrast(1.08) brightness(1.04)";
+
+      setTimeout(() => {
+        document.body.style.filter = "contrast(1) brightness(1)";
+      },100);
+    }
+  },1800);
 
   console.log("YAO SCRIPT IS WORKING");
 });
