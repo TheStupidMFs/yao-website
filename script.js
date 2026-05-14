@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if(chaos){
         document.body.classList.add("chaos-mode");
         rageBox.innerText = "CHAOS MODE ACTIVATED";
-        spawnFloatingText("CTO CHAOS");
+        spawnFloatingText("BITCH PLEASE");
         document.title = "⚠️ BITCH PLEASE CTO ⚠️";
       }else{
         document.body.classList.remove("chaos-mode");
