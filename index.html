@@ -12,12 +12,19 @@
 <body>
 
   <div class="noise"></div>
+  <div class="scanlines"></div>
   <div class="cursor-glow"></div>
+
+  <div class="popup" id="popup">
+    <button id="closePopup">x</button>
+    <h3>WARNING</h3>
+    <p>You have entered Bitch Please mode.</p>
+  </div>
 
   <header class="hero" id="home">
 
     <nav class="navbar">
-      <div class="brand">$YAO</div>
+      <img src="assets/yaologo.jpg" class="nav-logo" alt="$YAO logo">
 
       <div class="nav-links">
         <a href="#lore">Lore</a>
@@ -28,21 +35,17 @@
     </nav>
 
     <div class="marquee">
-      <span>Bitch Please • Rage Comics Are Back • Vintage Internet Energy • $YAO • </span>
+      <span>Bitch Please • Rage Comics Are Back • Vintage Internet Energy • $YAO • Moon Missions • </span>
     </div>
 
     <section class="hero-content">
-      <div class="floating-face">ಠ_ಠ</div>
+      <img src="assets/yaologo.jpg" class="hero-logo" alt="$YAO logo">
 
-      <p class="eyebrow">WELCOME TO THE MOST DISRESPECTFUL CORNER OF THE INTERNET</p>
-
-      <h1 class="glitch" data-text="BITCH PLEASE">
-        BITCH PLEASE
-      </h1>
+      <h1 class="glitch" data-text="BITCH PLEASE">BITCH PLEASE</h1>
 
       <p class="hero-copy">
-        $YAO brings back 2009 rage comic energy — ugly, loud, sarcastic,
-        and way too powerful to ignore.
+        $YAO is the return of sarcastic, vintage internet meme culture.
+        Rage comics are back. The timeline is cooked.
       </p>
 
       <div class="hero-buttons">
@@ -57,27 +60,44 @@
 
   </header>
 
+  <section class="banner-section">
+    <img src="assets/yaobanner.png" class="banner-img" alt="$YAO banner">
+  </section>
+
   <section class="section" id="lore">
     <h2>The Lore</h2>
 
     <p>
-      Before polished influencer memes, before everything became an ad,
-      there was pure internet chaos. Rage faces. Bad grammar. Loud reactions.
-      Unfiltered disrespect.
+      Before everything was polished, sponsored, and fake deep, the internet was stupid in the best way.
+      Rage faces, cursed edits, terrible fonts, and reactions that somehow explained life better than words.
     </p>
 
     <p>
-      $YAO is bringing that energy back.
+      $YAO brings that era back with one message:
     </p>
+
+    <h3 class="big-quote">Bitch Please.</h3>
   </section>
 
   <section class="section dark" id="memes">
     <h2>Meme Weapons</h2>
 
+    <div class="meme-gallery">
+      <div class="meme-card">
+        <img src="assets/yaomeme1.jpg" alt="$YAO meme 1">
+        <p>Exhibit A: certified vintage disrespect.</p>
+      </div>
+
+      <div class="meme-card">
+        <img src="assets/yaomeme2.jpg" alt="$YAO meme 2">
+        <p>Exhibit B: the timeline never stood a chance.</p>
+      </div>
+    </div>
+
     <div class="card-grid">
       <div class="card shake">
         <h3>Rage Comics</h3>
-        <p>The original ugly meme format.</p>
+        <p>The original meme format.</p>
       </div>
 
       <div class="card shake">
@@ -87,7 +107,7 @@
 
       <div class="card shake">
         <h3>Bitch Please Energy</h3>
-        <p>Sarcastic. Unbothered. Vintage.</p>
+        <p>Sarcastic. Unbothered. OG.</p>
       </div>
     </div>
   </section>
@@ -96,16 +116,19 @@
     <h2>Buy $YAO</h2>
 
     <p>
-      Add your real buy link, chart link, and contract address here.
+      Add your real contract address below when ready.
     </p>
 
     <div class="buy-box">
-      <code>CONTRACT ADDRESS GOES HERE</code>
+      <code id="contract">VnqKnEybGaw6G5ZAdjvPDri5RzDLPXznqxBunG13GJE</code>
 
       <div class="hero-buttons">
-        <a href="#" class="btn primary">Dexscreener</a>
+        <button class="btn primary" id="copyContract">Copy Contract</button>
+        <a href="#" class="btn secondary">Dexscreener</a>
         <a href="#" class="btn secondary">Buy Now</a>
       </div>
+
+      <p id="copyMessage"></p>
     </div>
   </section>
 
@@ -125,6 +148,7 @@
 
   <footer>
     <p>$YAO © 2026 — Bitch Please.</p>
+    <p class="small">Press “Y” for chaos mode.</p>
   </footer>
 
   <script src="script.js"></script>
